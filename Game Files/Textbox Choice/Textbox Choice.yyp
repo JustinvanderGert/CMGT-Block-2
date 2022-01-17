@@ -8,8 +8,9 @@
     {"id":{"name":"scr_game_text","path":"scripts/scr_game_text/scr_game_text.yy",},"order":1,},
     {"id":{"name":"scr_textbox_functions","path":"scripts/scr_textbox_functions/scr_textbox_functions.yy",},"order":0,},
     {"id":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"order":2,},
+    {"id":{"name":"spr_headshake","path":"sprites/spr_headshake/spr_headshake.yy",},"order":4,},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},"order":0,},
-    {"id":{"name":"spr_speakblock","path":"sprites/spr_speakblock/spr_speakblock.yy",},"order":2,},
+    {"id":{"name":"spr_idle","path":"sprites/spr_idle/spr_idle.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

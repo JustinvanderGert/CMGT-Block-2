@@ -7,18 +7,20 @@ switch(_text_id) {
 	
 	 
 	case "npc 1":
-		scr_text("hi im npc 1")
-		scr_text("randome text i am writing here to test")
-		scr_text("Do you like video games?")
-			scr_option("Yeah. I love them!", "npc 1 - yes")
-			scr_option("Nah. Who cares?", "npc 1 - no")
+		scr_text("hi im am the witness")
+		scr_text("i am very shy and i nod alot")
+		scr_text("i did not see much")
+			scr_option("did you see anything?", "npc 1 - ask")
+			scr_option("oh that is okay", "npc 1 - not")
 		break;
 	
-	case "npc 1 - yes":
-		scr_text("OMG, me to!")
+	case "npc 1 - ask":
+		scr_text("i swear i did not.")
+		obj_speakblock.coversation_end = true
+		
 		break;
-	case "npc 1 - no": 
-		scr_text("awe man that sucks")
+	case "npc 1 - not": 
+		scr_text("thank you for not asking")
 		break;
 		
 	case "npc 2":

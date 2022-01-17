@@ -5,7 +5,8 @@ function scr_set_defaults_for_text(){
 	
 }
 
-/// @pram text
+/// @param text
+/// @param [character]
 function scr_text(_text) {
 
 
@@ -16,6 +17,7 @@ function scr_text(_text) {
 	page_number++;
 
 }
+
 
 /// @param option
 /// @param link_id
