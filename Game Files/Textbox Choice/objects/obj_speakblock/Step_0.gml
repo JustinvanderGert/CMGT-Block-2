@@ -1,6 +1,6 @@
 var _s = id;
 
-if position_meeting(mouse_x, mouse_y, id) && mouse_check_button_pressed(mb_left)
+if position_meeting(mouse_x, mouse_y, id) && mouse_check_button_pressed(mb_left) && !conversation_had
 	{
 	
 	create_textbox(text_id);
@@ -10,7 +10,9 @@ if position_meeting(mouse_x, mouse_y, id) && mouse_check_button_pressed(mb_left)
 if coversation_end = true {
 	sprite_index = spr_headshake
 	image_index = 0 
-	coversation_end = false
+
+	conversation_had = true;
+	coversation_end = false;
 	}
 	
 if sprite_index == spr_headshake && image_index >= 10 {

@@ -1,6 +1,6 @@
 /// @param text_id
 function scr_game_text(_text_id) {
-	
+	GM = GameManager;
 switch(_text_id) {
 	
 	
@@ -18,9 +18,27 @@ switch(_text_id) {
 		scr_text("i swear i did not.")
 		obj_speakblock.coversation_end = true
 		
+		GM.choices[0] = 1;
+		
 		break;
 	case "npc 1 - not": 
 		scr_text("thank you for not asking")
+			scr_option("Could you follow me?", "npc 1 - follow")
+			scr_option("Don't leave the city", "npc 1 - stay")
+		
+		GM.choices[0] = 0;
+		break;
+	
+	case "npc 1 - follow":
+		scr_text("No");
+		
+		GM.choices[1] = 1;
+		break;
+		
+	case "npc 1 - stay":
+		scr_text("Okay")
+		
+		GM.choices[1] = 0;
 		break;
 		
 	case "npc 2":

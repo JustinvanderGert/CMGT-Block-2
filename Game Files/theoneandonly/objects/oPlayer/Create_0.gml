@@ -11,6 +11,8 @@ spriteRun = sPlayerRun;
 spriteIdle = sPlayer;
 localFrame = 0;
 
+pickedUpAmount = 0;
+
 if(global.targetX != -1)
 {
 	x = global.targetX;

@@ -8,4 +8,11 @@ global.targetY = -1;
 global.targetDirection = 0;
 
 
+global.items = [];
+global.choices = [];
+global.minPickupDist = 100;
+
+global.textDisplayed = false;
+
+
 room_goto(ROOM_START);
