@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oInteract",
+    "path": "objects/oInteract/oInteract.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
