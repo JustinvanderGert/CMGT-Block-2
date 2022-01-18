@@ -24,13 +24,45 @@ switch(_text_id) {
 		break;
 
 	case "item Fingerprint kit":
-		scr_text("With this forensics will be easier.")
+		scr_text("With this, forensics will be easier.")
 		scr_text("Good thing I found it.")
 		break;
 
 	case "Leave Office":
 		scr_text("Alright, It's time to head out!")
 		break;
+		
+		
+	case "Enter City":
+		scr_text("The crime scene should be south of here.")
+		scr_text("Phone: R-RING RING!")
+		scr_text("B: H-hey brother, how are you doing?")
+		scr_text("I don't have time for this")
+		scr_text("*Ends call*")
+		break;
+		
+	case "Cop":
+		scr_text("The body is inside, go ahead")
+		break;
+		
+	case "Witness":
+		scr_text("*Shiver*")
+		scr_text("I can't believe it...")
+			scr_option("Are you able to tell me what you saw?", "Witness - Talks")
+			scr_option("Talk to me", "Witness - Silent")
+		break;
+	
+	case "Witness - Talks":
+		scr_text("It was horrible...")
+		scr_text("A man in a brown coat did this!")
+		GM.choices[0] = 0;
+		break;
+		
+	case "Witness - Silent":
+		scr_text("I... I didn't see...")
+		GM.choices[0] = 1;
+		break;
+
 
 	 
 	case "npc 1":

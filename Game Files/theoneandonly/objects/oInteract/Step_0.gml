@@ -7,3 +7,8 @@ if(! pickedUp) {
 		popup_id.visible = false;
 	}
 }
+
+if (room != rOffice && x != -100) {
+	x = -100
+	y = -100
+}

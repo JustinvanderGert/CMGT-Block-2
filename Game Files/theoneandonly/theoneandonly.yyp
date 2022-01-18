@@ -70,7 +70,7 @@
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},"order":0,},
     {"id":{"name":"sInteract","path":"sprites/sInteract/sInteract.yy",},"order":27,},
     {"id":{"name":"oCrowdMan","path":"objects/oCrowdMan/oCrowdMan.yy",},"order":12,},
-    {"id":{"name":"PickupHandler","path":"scripts/PickupHandler/PickupHandler.yy",},"order":4,},
+    {"id":{"name":"InteractionHandler","path":"scripts/InteractionHandler/InteractionHandler.yy",},"order":4,},
     {"id":{"name":"spr_main_font","path":"sprites/spr_main_font/spr_main_font.yy",},"order":26,},
     {"id":{"name":"sUVLight","path":"sprites/sUVLight/sUVLight.yy",},"order":22,},
     {"id":{"name":"sKiller","path":"sprites/sKiller/sKiller.yy",},"order":21,},

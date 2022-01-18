@@ -13,12 +13,15 @@ if (!global.textDisplayed && !global.gamePaused) {
 	inputDirection = point_direction(0,0,keyRight-keyLeft,keyDown-keyUp);
 	inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 	
-	//While in the office keep track of closest object
-	if(room = rOffice) {
-		//When interacting start the pickup handler function
-		if(keyActivate){	
+	//When interacting start the handler functions
+	if(keyActivate){
+		//Office is he only room with items to pick up
+		if(room == rOffice) {
 			closestObj = GetClosestObject()
 			PickupHandler(closestObj);
+		} else {
+			closestNpc = GetClosestNPC()
+			TalkHandler(closestNpc);
 		}
 	}
 } else {

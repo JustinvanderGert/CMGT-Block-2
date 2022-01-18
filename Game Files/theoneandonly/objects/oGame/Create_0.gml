@@ -9,13 +9,12 @@ global.targetDirection = 0;
 
 //Item related vars
 global.items = [];
-global.choices = [];
-global.minPickupDist = 40;
+global.minInteractDist = 40;
 
 //Text related vars
 global.textDisplayed = false;
+global.NPC = [];
 DialogueProgVars();
 
 
 room_goto(ROOM_START);
-alarm[0] = 5;
