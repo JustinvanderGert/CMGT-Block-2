@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 ms -= 1;
 
 //if ms = 0, deduct 1 second

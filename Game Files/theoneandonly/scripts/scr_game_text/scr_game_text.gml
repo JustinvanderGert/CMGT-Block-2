@@ -4,17 +4,33 @@ function scr_game_text(_text_id) {
 switch(_text_id) {
 	
 	
+	case "P-chief - Start":
+		scr_text("Phone: R-RING RING!")
+		scr_text("Hello, this is detective Jones. What do you need?")
+		scr_text("P: Hey there, I am the police chief from the [City name] county. " +
+		"I heard that you are for hire and are quite skilled in your field from hearing about your previous work.")
+		scr_text("P: We are currently shorthanded here, so we could use some help with a murder case that we have been having trouble with for a while. " +
+		"Would you be interested?")
+		scr_text("Alright, I will be there later today.")
+		scr_text("P: I shall see you then!")
+		scr_text("*Ends call*")
+
+		scr_text("I should look for usefull items before heading out.")
+		break;
+
 	case "item UV-Light":
 		scr_text("Ah, there is my UV-Light.")
 		scr_text("This could come in usefull.")
 		break;
 
-			
 	case "item Fingerprint kit":
 		scr_text("With this forensics will be easier.")
 		scr_text("Good thing I found it.")
 		break;
 
+	case "Leave Office":
+		scr_text("Alright, It's time to head out!")
+		break;
 
 	 
 	case "npc 1":
@@ -27,7 +43,7 @@ switch(_text_id) {
 	
 	case "npc 1 - ask":
 		scr_text("i swear i did not.")
-		obj_speakblock.coversation_end = true
+		//obj_speakblock.coversation_end = true
 		
 		GM.choices[0] = 1;
 		break;

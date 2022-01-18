@@ -1,6 +1,7 @@
 //key to activate textbox and location of textbox
-accept_key = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("E"));
-
+if (!global.gamePaused) {
+	accept_key = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("E"));
+}
 
 textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0]) + 110 ;
@@ -124,8 +125,19 @@ if accept_key
 			if option_number > 0 {
 				create_textbox(option_link_id[option_pos]);
 			}
-				global.textDisplayed = false;
 				instance_destroy();	
+				
+				global.textDisplayed = false;
+				
+				//Setup after specific dialogue
+				if(global.firstCall == 1) {
+					global.firstCall++
+					
+				} else if (global.leaveOffice == 1) {
+					//show_debug_message("Leave office!")
+					global.leaveOffice++
+					ChangeRoom(rCity, 83, 163);
+				}
 			}
 			
 		}
