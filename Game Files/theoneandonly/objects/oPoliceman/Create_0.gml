@@ -1,3 +1,6 @@
 talked = false
 name = "Cop"
-array_push(global.NPC, self);
+
+if (room = rCity) {
+	array_push(global.NPC, self);
+}

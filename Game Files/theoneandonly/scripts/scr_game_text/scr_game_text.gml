@@ -3,6 +3,10 @@ function scr_game_text(_text_id) {
 	GM = oGame;
 switch(_text_id) {
 	
+	case "Dog":
+		scr_text("Woof Woof!")
+		scr_text("*Licks your hand*")
+		break;
 	
 	case "P-chief - Start":
 		scr_text("Phone: R-RING RING!")

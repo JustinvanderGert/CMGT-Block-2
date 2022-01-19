@@ -1,3 +1,6 @@
-name =  "Witness"
 talked = false
-array_push(global.NPC, self);
+name =  "Witness"
+
+if (room = rCity) {
+	array_push(global.NPC, self);
+}
