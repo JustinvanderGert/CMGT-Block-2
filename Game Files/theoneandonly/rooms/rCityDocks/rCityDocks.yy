@@ -80,7 +80,6 @@
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Lamps","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oDoggy","path":"objects/oDoggy/oDoggy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_4399C665","path":"rooms/rCity/rCity.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":272.0,"y":204.0,"resourceVersion":"1.0","name":"inst_4399C665","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oWitness","path":"objects/oWitness/oWitness.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":392.0,"y":330.0,"resourceVersion":"1.0","name":"inst_4CE26930","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oPoliceman","path":"objects/oPoliceman/oPoliceman.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":371.0,"y":330.0,"resourceVersion":"1.0","name":"inst_48370C52","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oFontSettings","path":"objects/oFontSettings/oFontSettings.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":-1.0,"resourceVersion":"1.0","name":"inst_2C54F21E","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
@@ -137,7 +136,6 @@
     {"name":"inst_772350EC","path":"rooms/rCityDocks/rCityDocks.yy",},
     {"name":"inst_1CE0674D","path":"rooms/rCityDocks/rCityDocks.yy",},
     {"name":"inst_4399C665","path":"rooms/rCityDocks/rCityDocks.yy",},
-    {"name":"inst_4CE26930","path":"rooms/rCityDocks/rCityDocks.yy",},
     {"name":"inst_48370C52","path":"rooms/rCityDocks/rCityDocks.yy",},
     {"name":"inst_2C54F21E","path":"rooms/rCityDocks/rCityDocks.yy",},
   ],

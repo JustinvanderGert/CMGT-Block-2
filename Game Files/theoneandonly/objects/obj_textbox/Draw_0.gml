@@ -1,6 +1,6 @@
 //key to activate textbox and location of textbox
 if (!global.gamePaused) {
-	accept_key = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("E"));
+	accept_key = keyboard_check_pressed(ord("E"));
 }
 
 textbox_x = camera_get_view_x(view_camera[0]);

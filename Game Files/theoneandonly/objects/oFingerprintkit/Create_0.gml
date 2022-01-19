@@ -8,7 +8,8 @@ array_push(global.items, self);
 
 image_speed = 0;
 
-popup_id = instance_create_layer(x, y - 16, layer, oPopup );
-radius = 15;
+radius = global.minInteractDist
+popup_id = instance_create_layer(x, y - radius, layer, oPopup );
+//radius = 15;
 
 pickedUp= false;

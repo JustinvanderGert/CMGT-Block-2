@@ -1,3 +1,3 @@
-if (talked == false) {
-	talked = true;
+if (talked == true) {
+	talked = false;
 }
