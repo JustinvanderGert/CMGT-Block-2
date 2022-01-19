@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Office",
+    "path": "folders/Objects/Office.yy",
   },
   "resourceVersion": "1.0",
   "name": "oFingerprintkit",

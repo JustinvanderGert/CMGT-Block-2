@@ -137,6 +137,11 @@ if accept_key
 					//show_debug_message("Leave office!")
 					global.leaveOffice++
 					ChangeRoom(rCity, 83, 163);
+				} else if (global.foundBody == 1) {
+					create_textbox("After body")
+					global.foundBody++
+				} else if (global.leaveCrimeScene == 1) {
+					global.leaveCrimeScene++
 				}
 			}
 			

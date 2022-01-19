@@ -4,15 +4,22 @@
 //Handle the picking up of an item
 function PickupHandler(obj){
 	if (obj == ""){
-		//show_debug_message("There is nothing close by!" + string(obj));
+		show_debug_message("There is nothing close by!" + string(obj));
 		return;
 	}
-	//show_debug_message("Pickup: " + string(obj));
+	show_debug_message("Pickup: " + string(obj));
+	if (obj.type == "Item") {
+		obj.x = 10 + 20 * pickedUpAmount;
+		obj.y = 10;
 	
-	obj.x = 10 + 20 * pickedUpAmount;
-	obj.y = 10;
-	
-	pickedUpAmount++;
+		pickedUpAmount++;
+	} else if (obj.type == "Evidence") {
+		show_debug_message(obj);
+		
+		if (obj.canInvestigate) {
+			obj.investigated = true;
+		}
+	}
 	obj.pickedUp = true;
 	
 	create_textbox(obj.text_id)
@@ -20,25 +27,36 @@ function PickupHandler(obj){
 
 
 //Calculate and return the closest object to the player that can be picked up
-function GetClosestObject(){
-	itemAmount = array_length(global.items);
-	closestItem = "";
+function GetClosestObject(type){
+	objList = []
+	objAmount = 0;
+	closestObj = "";
 	closestDist = 1000;
 
-	for(i = 0; i < itemAmount; i++){
+	if (type = "Item") {
+		objList = global.items;
+		objAmount = array_length(objList);
+	} else if (type = "Evidence") {
+		show_debug_message("Interact with evidence" + string(global.evidence));
+		objList = global.evidence;
+		objAmount = array_length(objList);
+	}
+
+	for(i = 0; i < objAmount; i++){
 		//show_debug_message("Calculate...")
-		obj = global.items[i];
-			
+		obj = objList[i];
+
 		dist_player = point_distance(obj.x, obj.y, oPlayer.x, oPlayer.y);
+		//show_debug_message("Positions" + string(obj.Name) + " Obj: " + string(obj.x) + ", " + string(obj.y));
 		if (!obj.pickedUp){
-			//show_debug_message(string(obj) + string(dist_player))
+			show_debug_message("Calculate... " + "Name:" + string(obj.Name) + " Dist: " + string(dist_player))
 			if (dist_player <= closestDist && dist_player <= global.minInteractDist) {
 				closestDist = dist_player;
-				closestItem = obj;
+				closestObj = obj;
 			}
 		}
 	}
-	return closestItem;
+	return closestObj;
 }
 
 

@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Docks",
+    "path": "folders/Objects/Docks.yy",
   },
   "resourceVersion": "1.0",
   "name": "oKiller",

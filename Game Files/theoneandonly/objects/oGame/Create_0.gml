@@ -9,7 +9,8 @@ global.targetDirection = 0;
 
 //Item related vars
 global.items = [];
-global.minInteractDist = 40;
+global.evidence = [];
+global.minInteractDist = 35;
 
 //Text related vars
 global.textDisplayed = false;

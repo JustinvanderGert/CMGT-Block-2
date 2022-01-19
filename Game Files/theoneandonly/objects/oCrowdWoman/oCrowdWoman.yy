@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "CourtRoom",
+    "path": "folders/Objects/CourtRoom.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCrowdWoman",

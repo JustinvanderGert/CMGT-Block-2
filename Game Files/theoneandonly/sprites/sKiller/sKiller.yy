@@ -117,8 +117,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Docks",
+    "path": "folders/Sprites/Docks.yy",
   },
   "resourceVersion": "1.0",
   "name": "sKiller",

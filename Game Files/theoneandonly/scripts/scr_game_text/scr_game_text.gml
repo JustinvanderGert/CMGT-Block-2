@@ -68,7 +68,76 @@ switch(_text_id) {
 		break;
 
 
-	 
+	case "Window":
+		scr_text("Nice view of the city")
+		scr_text("Was it always open?")
+		break;
+		
+	case "Window - Fingerprint":
+		scr_text("*Pulls out Fingerprint kit*")
+		scr_text("There are fingerprints from someone other than the body")
+		scr_text("The killer must have entered from here!")
+		break;
+		
+	case "PictureFrame":
+		scr_text("This must be the deceased")
+		break;
+		
+	case "PictureFrame - Fingerprint":
+		scr_text("*Pulls out Fingerprint kit*")
+		scr_text("It appears that someone besides the owner took a look at this picture")
+		scr_text("The killer seems to like to get to know the target, even after the murder")
+		break;
+		
+	case "Body":
+		scr_text("Oof, that's a lot of damage")
+		scr_text("*Holds vomit*")
+		break;
+
+	case "UmbrellaStand":
+		scr_text("Is that ketchup?")
+		break;
+	
+	case "UmbrellaStand - UV":
+		scr_text("*Pulls out UV-Light*")
+		scr_text("That is definitly blood")
+		scr_text("This was used as the weapon!")
+		break;
+
+	case "Fireplace":
+		scr_text("Looks like the murderer tried to burn some evidence")
+		scr_text("It's to damaged to get anything out of it")
+		break;
+	
+	case "Fireplace - UV":
+		scr_text("*Pulls out UV-Light*")
+		scr_text("Hmmm, there is also some dried blood here")
+		scr_text("The victim was stabbed in front of the fireplace!")
+		break;
+		
+	case "After body":
+		scr_text("Phone: R-RING RING")
+		scr_text("B: H-hey. So Uhmm... I Hope I am not interrupting anything but I- I mean... I don’t know what's going on.")
+		scr_text("B: But I noticed a few strange things happening around-")
+		scr_text("I am busy, I will call you later.")
+		scr_text("B: I am serious, recent-")
+		scr_text("I SAID, I can't speak right now. I will call you later")
+		scr_text("*Ends call*")
+		break;
+		
+	case "Leave CrimeScene":
+		scr_text("Phone: R-RING RING!")
+		scr_text("P: Hello sir. We have called to inform you of recent events that have occurred.")
+		scr_text("What is it?")
+		scr_text("P: Your brother has been put on trial for charges of multiple murders.")
+		scr_text("P:Also, your brother wanted us to tell you that he wishes to speak to you during the trial.")
+		scr_text("What!? That can't be true! He would never do that!")
+		scr_text("P:Sir, we understand that this might come as a shock, but we are just relaying the news. The trial is happening now")
+		scr_text("P:So if you wish to see it, you can come.")
+		scr_text("I... I understand. Thank you for telling me this.")
+		scr_text("*Ends call*")
+		break;
+
 	case "npc 1":
 		scr_text("hi im am the witness")
 		scr_text("i am very shy and i nod alot")

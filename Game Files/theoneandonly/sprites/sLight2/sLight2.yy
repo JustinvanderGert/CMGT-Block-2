@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "City",
+    "path": "folders/Sprites/City.yy",
   },
   "resourceVersion": "1.0",
   "name": "sLight2",

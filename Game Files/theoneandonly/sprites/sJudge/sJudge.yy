@@ -117,8 +117,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "CourtRoom",
+    "path": "folders/Sprites/CourtRoom.yy",
   },
   "resourceVersion": "1.0",
   "name": "sJudge",

@@ -12,3 +12,13 @@ if(room == rCity && global.enterCity == 0) {
 	create_textbox("Enter City");
 	global.enterCity++;
 }
+
+//When leaving the crime scene - Police chief calls
+if(room == rCitywithCourt && global.leaveCrimeScene == 0) {
+	create_textbox("Leave CrimeScene");
+	global.leaveCrimeScene++;
+}
+
+if(room == rCrimeScene && oBody.investigated && global.foundBody == 0) {
+	global.foundBody++
+}

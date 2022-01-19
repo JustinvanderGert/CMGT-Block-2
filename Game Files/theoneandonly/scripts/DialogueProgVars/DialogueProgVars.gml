@@ -1,6 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-
 //variables keeping track of progression through game dialogue.
 function DialogueProgVars() {
 	global.choices = [];
@@ -11,6 +8,10 @@ function DialogueProgVars() {
 
 	//City
 	global.enterCity = 0;
+	
+	//CrimeScene
+	global.foundBody = 0;
+	global.leaveCrimeScene = 0
 }
 
 function setInteractibleNPC() {

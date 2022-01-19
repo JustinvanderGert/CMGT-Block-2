@@ -8,7 +8,7 @@ if(! pickedUp) {
 	}
 }
 
-if (room != rOffice && x != -100) {
-	x = -100
-	y = -100
-}
+//if (room != rOffice && x != -100) {
+//	x = -100
+//	y = -100
+//}

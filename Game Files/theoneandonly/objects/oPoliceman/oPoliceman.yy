@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "City",
+    "path": "folders/Objects/City.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPoliceman",

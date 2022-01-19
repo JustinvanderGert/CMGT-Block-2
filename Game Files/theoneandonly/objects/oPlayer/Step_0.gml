@@ -15,14 +15,17 @@ if (!global.textDisplayed && !global.gamePaused) {
 	
 	//When interacting start the handler functions
 	if(keyActivate){
-		//Office is he only room with items to pick up
+		//Office is the only room with items to pick up
 		if(room == rOffice) {
-			closestObj = GetClosestObject()
+			closestObj = GetClosestObject("Item")
 			PickupHandler(closestObj);
-		} else {
-			closestNpc = GetClosestNPC()
-			TalkHandler(closestNpc);
+		} else if(room == rCrimeScene){
+			closestObj = GetClosestObject("Evidence")
+			PickupHandler(closestObj);
 		}
+		
+		closestNpc = GetClosestNPC()
+		TalkHandler(closestNpc);
 	}
 } else {
 	//Set movement to 0
