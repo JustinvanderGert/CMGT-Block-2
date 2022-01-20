@@ -1,3 +1,4 @@
 /// @description Restart Game
 
-game_restart();
+room_goto(rMenu);
+//game_restart();

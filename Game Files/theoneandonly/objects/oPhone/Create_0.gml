@@ -1,0 +1,2 @@
+startMoving = false
+showing = false;

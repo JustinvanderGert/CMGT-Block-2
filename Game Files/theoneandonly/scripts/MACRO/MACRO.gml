@@ -3,5 +3,5 @@
 function MACRO(){
 #macro FRAME_RATE 120
 #macro TILE_SIZE 8
-#macro ROOM_START rOffice
+#macro ROOM_START rMenu
 }

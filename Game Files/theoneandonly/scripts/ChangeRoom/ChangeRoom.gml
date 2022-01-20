@@ -7,5 +7,6 @@ function ChangeRoom(targetRoom, targetX, targetY) {
 	global.targetX = targetX;
 	global.targetY = targetY;
 	global.targetDirection = oPlayer.direction;
+	global.currentRoom = targetRoom;
 	room_goto(targetRoom);
 }
