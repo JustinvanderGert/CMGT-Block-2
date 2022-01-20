@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPhone",
-    "path": "sprites/sPhone/sPhone.yy",
+    "name": "sControlsMenu",
+    "path": "sprites/sControlsMenu/sControlsMenu.yy",
   },
   "solid": false,
   "visible": true,

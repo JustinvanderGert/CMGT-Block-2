@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sControlsMenu",
-    "path": "sprites/sControlsMenu/sControlsMenu.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
