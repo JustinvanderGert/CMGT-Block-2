@@ -146,9 +146,12 @@ if accept_key
 					
 					if (!global.hasAllEvidence) {
 						//Didn't collect evidence - Bad ending!
-						room_goto(rMenu)
+						create_textbox("Final Overview")
 					}
 				} else if (global.enterDocks == 1) {
+					global.enterDocks++
+					create_textbox("Final Overview")
+				} else if(global.finalOverview == 1) {
 					room_goto(rMenu)
 				}
 			}

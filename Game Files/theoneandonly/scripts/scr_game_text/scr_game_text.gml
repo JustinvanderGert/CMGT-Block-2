@@ -4,6 +4,7 @@ function scr_game_text(_text_id) {
 switch(_text_id) {
 	
 	case "Dog":
+		global.choices[0] = 2
 		scr_text("*You pet the dog*")
 		scr_text("Woof Woof!")
 		scr_text("*Licks your hand*")
@@ -71,13 +72,13 @@ switch(_text_id) {
 		scr_text("P: Calm down. Nobody is going to pressure you into saying anything, but I would be extremely grateful if you helped me with the investigation. Can you do that?")
 		scr_text("W: A-.. Alright… It was dark, so I didn’t see much, but it was an older man. I didn’t see exactly what happened, but his clothes... ")
 		scr_text("W: They were covered in blood... And- and. Uhmm... Although I didn’t see his face, I believe he was balding. Sorry I didn’t see much. That is all I saw.")
-		GM.choices[0] = 0;
+		global.choices[1] = 2;
 		break;
 		
 	case "Witness - Silent":
 		scr_text("P: Miss, not cooperating and hiding information about the crime counts as complicity and you could be seen as an accomplice. So for your own good, tell us what you saw.")
 		scr_text("W: I... I didn't see... Please... Just leave me alone...")
-		GM.choices[0] = 1;
+		global.choices[1] = 1;
 		break;
 
 
@@ -139,6 +140,7 @@ switch(_text_id) {
 		break;
 		
 	case "Leave CrimeScene - No Evidence":
+		global.choices[2] = 0
 		scr_text("Phone: R-RING RING!")
 		scr_text("Lawyer: Hello sir. This is your brother's lawyer and I have called to inform you of recent events that have occurred.")
 		scr_text("P: What is it?")
@@ -152,6 +154,7 @@ switch(_text_id) {
 		break;
 				
 	case "Leave CrimeScene - With Evidence":
+		global.choices[2] = 1
 		scr_text("Phone: R-RING RING!")
 		scr_text("L: Hello sir. This is your brother's lawyer and I have called to inform you of recent events that have occurred.")
 		scr_text("P: What is it?")
@@ -182,6 +185,7 @@ switch(_text_id) {
 		
 	case "Court - Proof":
 		global.saveBrother = true;
+		global.choices[3] = 2
 		scr_text("J: After the investigation, we have taken a look at all the new evidence that has been provided and the previous charges and the court has finally concluded.")
 		scr_text("J: Mr Steve has been found NOT GUILTY of the charges presented against him due to most of the evidence having been investigated and proven to have been faked.")
 		scr_text("J: With that, I shall announce this court session over. Everyone is dismissed.")
@@ -189,6 +193,7 @@ switch(_text_id) {
 		break;
 		
 	case "Court - Catch":
+		global.choices[3] = 1
 		scr_text("J: After the investigation, we have taken a look at all the evidence and past charges and have concluded.")
 		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
 		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
@@ -218,6 +223,33 @@ switch(_text_id) {
 		break;
 
 		
+	case "Final Overview":
+		//Your ending
+		global.finalOverview++
+		if(global.choices[2] == 0) {
+			scr_text("Reached ending 1: You failed at your job!")
+		} else if(global.choices[3] == 1) {
+			scr_text("Reached ending 2: Cath the killer!")
+		} else if (global.choices[3] == 2) {
+			scr_text("Reached ending 3: Saved your brother!")
+		}
+		
+		scr_text("Here is how you ended up making choices.")
+		//All choices made
+		if (global.choices[0] == 2) {
+			scr_text(choiceText(global.choices[0]) + ": You interacted with the dog!")
+		} else {
+			scr_text(choiceText(global.choices[0]) + ": You ignored the dog!")
+		}
+		scr_text(choiceText(global.choices[1]) + ": Your interaction with the witness.")
+		scr_text(choiceText(global.choices[2]) + ": Your handling of evidence and tools to help with that.")
+		if (global.hasAllEvidence) {
+			scr_text(choiceText(global.choices[3]) + ": Your final decision, choosing between your job or your family.")
+		}
+		scr_text("Try to get all 3 endings!")
+		break;
+	
+	
 
 	case "npc 1":
 		scr_text("hi im am the witness")
@@ -231,7 +263,7 @@ switch(_text_id) {
 		scr_text("i swear i did not.")
 		//obj_speakblock.coversation_end = true
 		
-		GM.choices[0] = 1;
+		global.choices[0] = 1;
 		break;
 		
 	case "npc 1 - not": 
@@ -239,19 +271,19 @@ switch(_text_id) {
 			scr_option("Could you follow me?", "npc 1 - follow")
 			scr_option("Don't leave the city", "npc 1 - stay")
 		
-		GM.choices[0] = 0;
+		global.choices[0] = 0;
 		break;
 	
 	case "npc 1 - follow":
 		scr_text("No");
 		
-		GM.choices[1] = 1;
+		global.choices[1] = 1;
 		break;
 		
 	case "npc 1 - stay":
 		scr_text("Okay")
 		
-		GM.choices[1] = 0;
+		global.choices[1] = 0;
 		break;
 		
 	}
