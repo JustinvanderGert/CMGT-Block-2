@@ -148,11 +148,11 @@ if accept_key
 						//Didn't collect evidence - Bad ending!
 						create_textbox("Final Overview")
 					}
-				//} else if (global.enterDocks == 3) {
-					//global.enterDocks++
-					//create_textbox("Final Overview")
-				//} else if(global.finalOverview == 1) {
-				//	room_goto(rMenu)
+				} else if (global.enterDocks == 2) {
+					global.enterDocks++
+				} else if (global.enterDocks == 3) {
+					global.enterDocks++
+					create_textbox("Final Overview")
 				}
 			}
 			

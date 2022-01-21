@@ -237,8 +237,8 @@ switch(_text_id) {
 		
 	case "Catch killer - Shrug 2":
 		scr_text("K: So now, this has gotten boring so take me away. I just hope you can live with yourself.")
-			scr_option("D:...", "Final Overview")
-		//global.enterDocks++
+			scr_text("D:...")
+		global.enterDocks++
 		oKiller.coversation_end = true
 		break;
 
@@ -268,7 +268,7 @@ switch(_text_id) {
 			scr_text(choiceText(global.choices[3]) + ": Your final decision, choosing between your job or your family.")
 		}
 		scr_text("Try to get all 3 endings!")
-			scr_option("Go to menu", "Menu")
+		scr_option("Go to menu", "Menu")
 		break;
 	
 	case "Menu":
