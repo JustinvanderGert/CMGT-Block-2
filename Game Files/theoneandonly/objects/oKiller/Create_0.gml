@@ -1,0 +1,2 @@
+talked = false
+name =  "Killer"

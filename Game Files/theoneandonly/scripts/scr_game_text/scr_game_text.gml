@@ -7,6 +7,7 @@ switch(_text_id) {
 		scr_text("*You pet the dog*")
 		scr_text("Woof Woof!")
 		scr_text("*Licks your hand*")
+		oDoggy.coversation_end = true
 		break;
 	
 	case "P-chief - Start":
@@ -55,6 +56,7 @@ switch(_text_id) {
 		
 	case "Cop":
 		scr_text("P: We found the body inside. You can go investigate it now.")
+		oPoliceman.coversation_end = true
 		break;
 		
 	case "Witness":
@@ -77,6 +79,7 @@ switch(_text_id) {
 	case "Witness - Silent":
 		scr_text("P: Miss, not cooperating and hiding information about the crime counts as complicity and you could be seen as an accomplice. So for your own good, tell us what you saw.")
 		scr_text("W: I... I didn't see... Please... Just leave me alone...")
+		oWitness.coversation_end = true
 		GM.choices[0] = 1;
 		break;
 
@@ -172,6 +175,7 @@ switch(_text_id) {
 		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
 		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
 		scr_text("*Smacks hammer*")
+		oJudge.coversation_end = true
 		break;
 
 	case "Enter Court - With Evidence":
@@ -214,6 +218,7 @@ switch(_text_id) {
 		scr_text("K: Oh, I did not. I simply put down a few clues for the policeman to find and you being so focused on me, missed the big picture.")
 		scr_text("K: You are the one who killed your brother.")
 		scr_text("K: So now, this has gotten boring so take me away. I just hope you can live with yourself.")
+		oKiller.coversation_end = true
 		scr_text("D:...")
 		break;
 
