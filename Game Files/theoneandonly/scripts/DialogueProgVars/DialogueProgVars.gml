@@ -19,8 +19,21 @@ function DialogueProgVars() {
 	
 	//Docks
 	global.enterDocks = 0;
+	
+	//Final overview
+	global.finalOverview = 0;
 }
 
 function setInteractibleNPC() {
 	global.NPC = [];
+}
+
+function choiceText(input) {
+	if(input == 1) {
+		return "Logical"
+	} else if(input == 2) {
+		return "Emotional"
+	} else {
+		return "Missed"
+	}
 }
