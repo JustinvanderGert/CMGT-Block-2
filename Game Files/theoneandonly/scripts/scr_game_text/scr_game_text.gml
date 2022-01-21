@@ -11,8 +11,8 @@ switch(_text_id) {
 	
 	case "P-chief - Start":
 		scr_text("Phone: R-RING RING!")
-		scr_text("D: Hello, this is detective Jones. What do you need?")
-		scr_text("P: Hey there, I am the police chief from the Nistrad county. " +
+		scr_text("Detective: Hello, this is detective Jones. What do you need?")
+		scr_text("Police chief: Hey there, I am the police chief from the Nistrad county. " +
 		"I heard that you are for hire and are quite skilled in your field from hearing about your previous work.")
 		scr_text("P: We are currently shorthanded here, so we could use some help with a murder case that we have been having trouble with for a while. " +
 		"Would you be interested?")
@@ -20,8 +20,8 @@ switch(_text_id) {
 		scr_text("P: I shall see you then!")
 		scr_text("*Ends call*")
 
-		scr_text("*Detective thinks to himself*" +
-		"I should look for my equipment before heading out.")
+		scr_text("*Detective thinks to himself*")
+		scr_text("I should look for my equipment before heading out.")
 		break;
 
 	case "item UV-Light":
@@ -42,9 +42,9 @@ switch(_text_id) {
 		
 		
 	case "Enter City":
-		scr_text("The crime scene should be south from here.")
+		scr_text("D: The crime scene should be south from here.")
 		scr_text("Phone: R-RING RING!")
-		scr_text("B: H-hey, how are you doing? I heard you’re in Nistrad and we haven’t met in a long time. S-so, how about we meet up someday?")
+		scr_text("Brother: H-hey, how are you doing? I heard you’re in Nistrad and we haven’t met in a long time. S-so, how about we meet up someday?")
 		scr_text("D: Hey Steve. Haven’t talked to you in a while, but unfortunately, I can’t. Recently I was busy with a case. Maybe some other time…")
 		scr_text("B: Ah... Y- Yep, that's alright… I understand you’re very busy, so I can’t blame you… B-but it just feels like we just no longer talk. So I just wanted to meet up, like you know, in the old days!")
 		scr_text("D: As I said, I can’t. Sorry but I have other matters to attend to now.")
@@ -60,7 +60,7 @@ switch(_text_id) {
 	case "Witness":
 		scr_text("*Shiver*")
 		scr_text("D: Hello miss. I am with the police and I came here to ask a few questions-")
-		scr_text("W: I-I’m sorry! I don’t know anything!")
+		scr_text("Witness: I-I’m sorry! I don’t know anything!")
 		scr_text("D: We have some information that you were around here during the time of the crime, so we-")
 		scr_text("W: I really don’t know anything, please leave me a-alone!")
 			scr_option("Calm her down" , "Witness - Talks")
@@ -140,7 +140,7 @@ switch(_text_id) {
 		
 	case "Leave CrimeScene - No Evidence":
 		scr_text("Phone: R-RING RING!")
-		scr_text("L: Hello sir. This is your brother's lawyer and I have called to inform you of recent events that have occurred.")
+		scr_text("Lawyer: Hello sir. This is your brother's lawyer and I have called to inform you of recent events that have occurred.")
 		scr_text("P: What is it?")
 		scr_text("L: Your brother has been put on trial for charges of multiple murders.")
 		scr_text("L: Also, your brother wanted us to tell you that he wishes to speak to you during the trial.")
@@ -167,7 +167,7 @@ switch(_text_id) {
 	
 	
 	case "Enter Court - No Evidence":
-		scr_text("J: We have all gathered here to judge the fate of Steve Stevenson for his crimes.")
+		scr_text("Judge: We have all gathered here to judge the fate of Steve Stevenson for his crimes.")
 		scr_text("J: After the investigation, we have taken a look at all the evidence and past charges and have concluded.")
 		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
 		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
@@ -175,7 +175,7 @@ switch(_text_id) {
 		break;
 
 	case "Enter Court - With Evidence":
-		scr_text("J: We have all gathered here to judge the fate of Steve Stevenson for his crimes.")
+		scr_text("Judge: We have all gathered here to judge the fate of Steve Stevenson for his crimes.")
 			scr_option("Give the evidence, try to prove your brother's innocence!", "Court - Proof")
 			scr_option("Go try to catch the killer before it's too late!" , "Court - Catch")
 		break;
