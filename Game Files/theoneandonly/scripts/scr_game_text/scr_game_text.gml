@@ -178,6 +178,10 @@ switch(_text_id) {
 		scr_text("J: After the investigation, we have taken a look at all the evidence and past charges and have concluded.")
 		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
 		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
+			scr_option("I could have fixed this!", "Court - Slams hammer")
+		break;
+		
+	case "Court - Slams hammer":
 		scr_text("*Smacks hammer*")
 		oJudge.coversation_end = true
 		break;
@@ -194,7 +198,7 @@ switch(_text_id) {
 		scr_text("J: After the investigation, we have taken a look at all the new evidence that has been provided and the previous charges and the court has finally concluded.")
 		scr_text("J: Mr Steve has been found NOT GUILTY of the charges presented against him due to most of the evidence having been investigated and proven to have been faked.")
 		scr_text("J: With that, I shall announce this court session over. Everyone is dismissed.")
-		scr_text("*Smacks hammer*")
+			scr_option("Thank god I made it in time!", "Court - Slams hammer")
 		break;
 		
 	case "Court - Catch":
@@ -202,7 +206,7 @@ switch(_text_id) {
 		scr_text("J: After the investigation, we have taken a look at all the evidence and past charges and have concluded.")
 		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
 		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
-		scr_text("*Smacks hammer*")
+			scr_option("I need to catch him!", "Court - Slams hammer")
 		break;
 		
 	
@@ -216,6 +220,10 @@ switch(_text_id) {
 	case "Catch killer":
 		scr_text("D: Stop right there! It’s over! Your killings end here!")
 		scr_text("K: Well done, someone was bright enough to find me.")
+			scr_option("You can't escape!", "Catch killer - Shrug 1")
+		break;
+		
+	case "Catch killer - Shrug 1":
 		scr_text("K: Honestly, I was getting bored with this being so easy, but I suppose this is fine too because at least I managed to pull through with one last trick.")
 		scr_text("K: Have you checked in with your brother yet?")
 		scr_text("D: What?")
@@ -223,19 +231,26 @@ switch(_text_id) {
 		scr_text("D: Why did you kill him!?")
 		scr_text("K: Oh, I did not. I simply put down a few clues for the policeman to find and you being so focused on me, missed the big picture.")
 		scr_text("K: You are the one who killed your brother.")
-		scr_text("K: So now, this has gotten boring so take me away. I just hope you can live with yourself.")
+			scr_option("*Gasp*", "Catch killer - Shrug 2")
 		oKiller.coversation_end = true
-		scr_text("D:...")
+		break;
+		
+	case "Catch killer - Shrug 2":
+		scr_text("K: So now, this has gotten boring so take me away. I just hope you can live with yourself.")
+			scr_option("D:...", "Final Overview")
+		//global.enterDocks++
+		oKiller.coversation_end = true
 		break;
 
 		
 	case "Final Overview":
+		//oKiller.game_summary = true;
 		//Your ending
 		global.finalOverview++
 		if(global.choices[2] == 0) {
 			scr_text("Reached ending 1: You failed at your job!")
 		} else if(global.choices[3] == 1) {
-			scr_text("Reached ending 2: Cath the killer!")
+			scr_text("Reached ending 2: Catch the killer!")
 		} else if (global.choices[3] == 2) {
 			scr_text("Reached ending 3: Saved your brother!")
 		}
@@ -253,8 +268,12 @@ switch(_text_id) {
 			scr_text(choiceText(global.choices[3]) + ": Your final decision, choosing between your job or your family.")
 		}
 		scr_text("Try to get all 3 endings!")
+			scr_option("Go to menu", "Menu")
 		break;
 	
+	case "Menu":
+		room_goto(rMenu)
+		break;
 	
 
 	case "npc 1":
