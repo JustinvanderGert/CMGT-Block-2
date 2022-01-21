@@ -12,6 +12,13 @@ function DialogueProgVars() {
 	//CrimeScene
 	global.foundBody = 0;
 	global.leaveCrimeScene = 0
+	
+	//Court
+	global.enterCourt = 0;
+	global.saveBrother = false;
+	
+	//Docks
+	global.enterDocks = 0;
 }
 
 function setInteractibleNPC() {

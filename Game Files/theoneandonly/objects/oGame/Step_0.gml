@@ -26,8 +26,41 @@ if(room == rCity && global.enterCity == 0) {
 
 //When leaving the crime scene - Police chief calls
 if(room == rCitywithCourt && global.leaveCrimeScene == 0) {
-	create_textbox("Leave CrimeScene");
+	global.hasAllEvidence = true;
+	for(i = 0; i < array_length(global.evidence); i++) {
+		currentItem = global.evidence[i]
+		if (currentItem.investigated == false) {
+			global.hasAllEvidence = false
+		}
+	}
+	
+	if(global.hasAllEvidence) {
+		create_textbox("Leave CrimeScene - With Evidence");
+	} else {
+		create_textbox("Leave CrimeScene - No Evidence");
+	}
 	global.leaveCrimeScene++;
+}
+
+//When entering the court room
+if(room == rCourt && global.enterCourt == 0) {
+	global.enterCourt++
+
+	if(global.hasAllEvidence) {
+		create_textbox("Enter Court - With Evidence")
+	} else {
+		create_textbox("Enter Court - No Evidence")
+	}
+}
+
+if(room == rDocks && global.enterDocks == 0) {
+	global.enterDocks++
+	
+	if (global.saveBrother) {
+		create_textbox("Killer gets away")
+	} else {
+		create_textbox("Catch killer")
+	}
 }
 
 if(room == rCrimeScene && oBody.investigated && global.foundBody == 0) {

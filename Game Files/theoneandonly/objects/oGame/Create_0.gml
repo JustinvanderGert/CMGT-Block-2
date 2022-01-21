@@ -23,6 +23,7 @@ global.currentRoom = rOffice;
 //Item related vars
 global.items = [];
 global.evidence = [];
+global.hasAllEvidence = false;
 global.minInteractDist = 35;
 
 //Text related vars

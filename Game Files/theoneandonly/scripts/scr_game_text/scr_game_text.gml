@@ -138,7 +138,7 @@ switch(_text_id) {
 		scr_text("*Ends call*")
 		break;
 		
-	case "Leave CrimeScene":
+	case "Leave CrimeScene - No Evidence":
 		scr_text("Phone: R-RING RING!")
 		scr_text("L: Hello sir. This is your brother's lawyer and I have called to inform you of recent events that have occurred.")
 		scr_text("P: What is it?")
@@ -150,6 +150,74 @@ switch(_text_id) {
 		scr_text("P: I... I understand. Thank you for telling me this.")
 		scr_text("*Ends call*")
 		break;
+				
+	case "Leave CrimeScene - With Evidence":
+		scr_text("Phone: R-RING RING!")
+		scr_text("L: Hello sir. This is your brother's lawyer and I have called to inform you of recent events that have occurred.")
+		scr_text("P: What is it?")
+		scr_text("L: Your brother has been put on trial for charges of multiple murders.")
+		scr_text("L: Also, your brother wanted us to tell you that he wishes to speak to you during the trial.")
+		scr_text("P: What!? That can't be true! He would never do that!")
+		scr_text("L: Sir, we understand that this might come as a shock, but we are just relaying the news.")
+		scr_text("L: Also, the odds are stacked quite against him, so likely unless some new evidence comes out, the verdict is heavily leaning towards him being sentenced guilty.")
+		scr_text("L: The trial is going to be happening in a few days. So if you wish to see it, you can come.")
+		scr_text("P: I... I understand. Thank you for telling me this.")
+		scr_text("*Ends call*")
+		break;
+	
+	
+	case "Enter Court - No Evidence":
+		scr_text("J: We have all gathered here to judge the fate of Steve Stevenson for his crimes.")
+		scr_text("J: After the investigation, we have taken a look at all the evidence and past charges and have concluded.")
+		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
+		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
+		scr_text("*Smacks hammer*")
+		break;
+
+	case "Enter Court - With Evidence":
+		scr_text("J: We have all gathered here to judge the fate of Steve Stevenson for his crimes.")
+			scr_option("Give the evidence, try to prove your brother's innocence!", "Court - Proof")
+			scr_option("Go try to catch the killer before it's too late!" , "Court - Catch")
+		break;
+		
+	case "Court - Proof":
+		global.saveBrother = true;
+		scr_text("J: After the investigation, we have taken a look at all the new evidence that has been provided and the previous charges and the court has finally concluded.")
+		scr_text("J: Mr Steve has been found NOT GUILTY of the charges presented against him due to most of the evidence having been investigated and proven to have been faked.")
+		scr_text("J: With that, I shall announce this court session over. Everyone is dismissed.")
+		scr_text("*Smacks hammer*")
+		break;
+		
+	case "Court - Catch":
+		scr_text("J: After the investigation, we have taken a look at all the evidence and past charges and have concluded.")
+		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
+		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
+		scr_text("*Smacks hammer*")
+		break;
+		
+	
+	case "Killer gets away":
+		scr_text("The following text is temporary and subject to be changed. Any names and or likeness to real characters are pure coincidence and works of fiction.")
+		scr_text("You're too late Batman!")
+		scr_text("You'll never catch me alive!")
+		scr_text("MWAHAHAHAHAHA!!!")
+		break;
+		
+	case "Catch killer":
+		scr_text("D: Stop right there! It’s over! Your killings end here!")
+		scr_text("K: Well done, someone was bright enough to find me.")
+		scr_text("K: Honestly, I was getting bored with this being so easy, but I suppose this is fine too because at least I managed to pull through with one last trick.")
+		scr_text("K: Have you checked in with your brother yet?")
+		scr_text("D: What?")
+		scr_text("K: Ah of course you wouldn’t, being such a busy man. Probably wouldn’t even notice if your brother died. Oops. I think I said too much.")
+		scr_text("D: Why did you kill him!?")
+		scr_text("K: Oh, I did not. I simply put down a few clues for the policeman to find and you being so focused on me, missed the big picture.")
+		scr_text("K: You are the one who killed your brother.")
+		scr_text("K: So now, this has gotten boring so take me away. I just hope you can live with yourself.")
+		scr_text("D:...")
+		break;
+
+		
 
 	case "npc 1":
 		scr_text("hi im am the witness")

@@ -134,7 +134,6 @@ if accept_key
 					global.firstCall++
 					
 				} else if (global.leaveOffice == 1) {
-					//show_debug_message("Leave office!")
 					global.leaveOffice++
 					ChangeRoom(rCity, 83, 163);
 				} else if (global.foundBody == 1) {
@@ -142,6 +141,15 @@ if accept_key
 					global.foundBody++
 				} else if (global.leaveCrimeScene == 1) {
 					global.leaveCrimeScene++
+				} else if (global.enterCourt == 1) {
+					global.enterCourt++
+					
+					if (!global.hasAllEvidence) {
+						//Didn't collect evidence - Bad ending!
+						room_goto(rMenu)
+					}
+				} else if (global.enterDocks == 1) {
+					room_goto(rMenu)
 				}
 			}
 			
@@ -171,7 +179,7 @@ if draw_char == text_length[page] && page == page_number -1
 	{
 	
 	//option selection
-	option_pos += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+	option_pos += global.menuKeyDown - global.menuKeyUp //keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 	option_pos = clamp(option_pos, 0, option_number-1);
 
 	//draw the options
