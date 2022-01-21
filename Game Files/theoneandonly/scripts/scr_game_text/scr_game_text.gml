@@ -32,7 +32,7 @@ switch(_text_id) {
 
 	case "item Fingerprint kit":
 		scr_text("D: Oh! My Fingerprint kit!")
-		scr_text("*Another thing he finds is Fingerprint-kit. Which, as the name suggests, will help find fingerprints that can be later on examined in a laboratory by the crew.*")
+		scr_text("*Detective finds his Fingerprint-kit. Which, as the name suggests, will help find fingerprints that can be later on examined in a laboratory by the crew.*")
 		scr_text("D: Perfect for finding out who the suspect is and what items he has touched.")
 		break;
 
