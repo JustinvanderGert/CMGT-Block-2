@@ -68,7 +68,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oCrowdWoman","path":"objects/oCrowdWoman/oCrowdWoman.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":94.0,"y":151.0,"resourceVersion":"1.0","name":"inst_496EA089","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCrowdMan","path":"objects/oCrowdMan/oCrowdMan.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":110.0,"y":152.0,"resourceVersion":"1.0","name":"inst_7527E315","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCrowdWoman","path":"objects/oCrowdWoman/oCrowdWoman.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":78.0,"y":152.0,"resourceVersion":"1.0","name":"inst_D4CCB83","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":274.0,"y":122.0,"resourceVersion":"1.0","name":"inst_65682E0C","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":1,"gridY":1,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oJudge","path":"objects/oJudge/oJudge.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":142.0,"y":51.0,"resourceVersion":"1.0","name":"inst_63238805","tags":[],"resourceType":"GMRInstance",},
@@ -132,7 +131,6 @@
     {"name":"inst_D4CCB83","path":"rooms/rCourt/rCourt.yy",},
     {"name":"inst_63238805","path":"rooms/rCourt/rCourt.yy",},
     {"name":"inst_2BD12324","path":"rooms/rCourt/rCourt.yy",},
-    {"name":"inst_65682E0C","path":"rooms/rCourt/rCourt.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,
