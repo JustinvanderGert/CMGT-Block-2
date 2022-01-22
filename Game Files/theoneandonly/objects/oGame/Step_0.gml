@@ -15,8 +15,6 @@ global.menuKeyDown = keyboard_check_pressed(vk_down) or keyboard_check_pressed(o
 //when loading Intro - Monologue
 if(room == rIntro && global.Intro == 0) {
 	//show_debug_message("Intro")
-	StopAllSound()
-	audio_play_sound(mMenu, 1, true)
 	create_textbox("Intro");
 	global.Intro++;
 }

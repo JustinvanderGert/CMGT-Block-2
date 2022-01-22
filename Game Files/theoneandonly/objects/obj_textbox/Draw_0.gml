@@ -114,10 +114,11 @@ if accept_key
 			
 		//nextpage
 		if page < page_number - 1
-			{
+		{
+			//audio_play_sound(NPC_talking, 2, false)
 			page++;
 			draw_char = 0;
-			}
+		}
 		//destroy textbox
 		else
 			{
@@ -130,7 +131,10 @@ if accept_key
 				global.textDisplayed = false;
 				
 				//Setup after specific dialogue
-				if(global.firstCall == 1) {
+				if(global.LeaveIntro == 0) {
+					global.LeaveIntro++
+					room_goto(rOffice)
+				} else if(global.firstCall == 1) {
 					global.firstCall++
 					
 				} else if (global.leaveOffice == 1) {

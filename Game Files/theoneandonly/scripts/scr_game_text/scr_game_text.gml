@@ -12,6 +12,7 @@ switch(_text_id) {
 		break;
 		
 	case "Intro":
+	show_debug_message("Show intro text")
 		scr_text("Dective: Strange places life leads you. Just another job like any before, but this time it leads me somewhere I didn’t think I would come so soon.")
 		scr_text("D: I wonder how he is doing? After the previous court case, he managed to finally settle down and go clean from what I’ve heard.")
 		scr_text("D: I hope he is well…")
