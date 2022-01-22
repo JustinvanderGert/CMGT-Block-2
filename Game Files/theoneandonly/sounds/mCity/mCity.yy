@@ -14,8 +14,8 @@
   "soundFile": "mCity.mp3",
   "duration": 24.6857071,
   "parent": {
-    "name": "sounds",
-    "path": "folders/sounds.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "mCity",

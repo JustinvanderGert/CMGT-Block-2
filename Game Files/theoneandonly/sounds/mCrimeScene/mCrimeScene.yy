@@ -14,8 +14,8 @@
   "soundFile": "mCrimeScene.mp3",
   "duration": 37.12,
   "parent": {
-    "name": "sounds",
-    "path": "folders/sounds.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "mCrimeScene",
