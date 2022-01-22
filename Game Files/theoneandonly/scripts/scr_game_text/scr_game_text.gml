@@ -180,11 +180,7 @@ switch(_text_id) {
 		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
 		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
 			scr_option("I could have fixed this!", "Court - Slams hammer")
-		scr_text("Is that all? Well… Yes.")
-		scr_text("We often have to make choices, sometimes not even knowing there are ones. But what we do know in the end, are their consequences.")
-		scr_text("Just like here, your brother is now gone, the true killer is left to roam unpunished because of your indecisiveness and inadequacy.")
-		scr_text("You might think, “If only I did it differently it could be different”, but in the end actions and lack thereof have consequences. So think about what is truly important to you and value them.")
-		scr_text("Lastly, we want to thank you for playing The Ripple.")
+		global.enterCourt++
 		break;
 		
 	case "Court - Slams hammer":
@@ -247,11 +243,6 @@ switch(_text_id) {
 	case "Catch killer - Shrug 2":
 		scr_text("K: So now, this has gotten boring so take me away. I just hope you can live with yourself.")
 		scr_text("D:...")
-		scr_text("And just like that, the true killer was caught. Ending the misery he brought and giving hope to the townspeople, but not all were able to see that resolution.")	
-		scr_text("Many families were ruined by the horrifying acts, leaving empty spots in their lives. And even you had to pay a great price for it.")
-		scr_text("A soul trying to redeem itself, cut short to save others, its fate chosen by you.")
-		scr_text("So you might ask, was the price truly worth it?")
-		scr_text("Well, that is up to you to decide and we thank you for playing The Ripple.")
 		global.enterDocks++
 		oKiller.coversation_end = true
 		break;
