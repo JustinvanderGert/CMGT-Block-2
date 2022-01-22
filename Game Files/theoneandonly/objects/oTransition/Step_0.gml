@@ -22,7 +22,6 @@ if (mode != TRANS_MODE.OFF)
 			}
 			case TRANS_MODE.NEW_GAME:
 			{
-				ResetGlobalVars()
 				room_goto(rIntro)
 				show_debug_message("New Game");
 				break;

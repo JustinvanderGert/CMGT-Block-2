@@ -132,6 +132,7 @@ if accept_key
 				
 				//Setup after specific dialogue
 				if(global.LeaveIntro == 0) {
+					ResetGlobalVars()
 					global.LeaveIntro++
 					room_goto(rOffice)
 				} else if(global.firstCall == 1) {
