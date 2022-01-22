@@ -18,6 +18,7 @@ function DialogueProgVars() {
 	//Court
 	global.enterCourt = 0;
 	global.saveBrother = false;
+	global.leaveCourt = 0;
 	
 	//Docks
 	global.enterDocks = 0;

@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mCity.mp3",
-  "duration": 22.2040825,
+  "soundFile": "Choices.mp3",
+  "duration": 0.264,
   "parent": {
-    "name": "Themes",
-    "path": "folders/Sounds/Themes.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mCity",
+  "name": "Choices",
   "tags": [],
   "resourceType": "GMSound",
 }

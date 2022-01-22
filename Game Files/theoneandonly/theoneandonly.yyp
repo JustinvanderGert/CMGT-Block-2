@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sFingerprintkit","path":"sprites/sFingerprintkit/sFingerprintkit.yy",},"order":0,},
     {"id":{"name":"oDefenders","path":"objects/oDefenders/oDefenders.yy",},"order":2,},
+    {"id":{"name":"Choices","path":"sounds/Choices/Choices.yy",},"order":2,},
     {"id":{"name":"sPolicemanExclaim","path":"sprites/sPolicemanExclaim/sPolicemanExclaim.yy",},"order":10,},
     {"id":{"name":"scr_textbox_functions","path":"scripts/scr_textbox_functions/scr_textbox_functions.yy",},"order":6,},
     {"id":{"name":"sPictureFrame","path":"sprites/sPictureFrame/sPictureFrame.yy",},"order":2,},
@@ -15,6 +16,7 @@
     {"id":{"name":"MACRO","path":"scripts/MACRO/MACRO.yy",},"order":1,},
     {"id":{"name":"scr_game_text","path":"scripts/scr_game_text/scr_game_text.yy",},"order":5,},
     {"id":{"name":"PlayerAnimateSprite","path":"scripts/PlayerAnimateSprite/PlayerAnimateSprite.yy",},"order":0,},
+    {"id":{"name":"Pick_up","path":"sounds/Pick_up/Pick_up.yy",},"order":1,},
     {"id":{"name":"sWindow","path":"sprites/sWindow/sWindow.yy",},"order":4,},
     {"id":{"name":"sCrowdMan","path":"sprites/sCrowdMan/sCrowdMan.yy",},"order":0,},
     {"id":{"name":"oPoliceman","path":"objects/oPoliceman/oPoliceman.yy",},"order":0,},
@@ -82,6 +84,7 @@
     {"id":{"name":"mCrimeScene","path":"sounds/mCrimeScene/mCrimeScene.yy",},"order":1,},
     {"id":{"name":"sJudge","path":"sprites/sJudge/sJudge.yy",},"order":3,},
     {"id":{"name":"ResetGlobalVars","path":"scripts/ResetGlobalVars/ResetGlobalVars.yy",},"order":11,},
+    {"id":{"name":"NPC_talking","path":"sounds/NPC_talking/NPC_talking.yy",},"order":0,},
     {"id":{"name":"oLightfromLamp2","path":"objects/oLightfromLamp2/oLightfromLamp2.yy",},"order":5,},
     {"id":{"name":"sDoggyPet","path":"sprites/sDoggyPet/sDoggyPet.yy",},"order":9,},
     {"id":{"name":"tTilesOffice","path":"tilesets/tTilesOffice/tTilesOffice.yy",},"order":2,},
@@ -172,6 +175,7 @@
     {"folderPath":"folders/Sprites/BG.yy","order":12,"resourceVersion":"1.0","name":"BG","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Menu.yy","order":27,"resourceVersion":"1.0","name":"Menu","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sounds/Themes.yy","order":0,"resourceVersion":"1.0","name":"Themes","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sounds/SFX.yy","order":1,"resourceVersion":"1.0","name":"SFX","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

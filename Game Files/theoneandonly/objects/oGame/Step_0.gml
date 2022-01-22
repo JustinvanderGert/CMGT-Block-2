@@ -73,7 +73,7 @@ if(room == rCourt && global.enterCourt == 0) {
 }
 
 if(room == rDocks && global.enterDocks == 0) {
-	StopSound(mCity)
+	StopSound(mCourt)
 	audio_play_sound(mDocks, 1, true)
 	global.enterDocks++
 	
