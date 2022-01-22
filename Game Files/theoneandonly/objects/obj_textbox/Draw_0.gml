@@ -141,9 +141,10 @@ if accept_key
 					global.foundBody++
 				} else if (global.leaveCrimeScene == 1) {
 					global.leaveCrimeScene++
-				} else if (global.enterCourt == 1) {
+				} else if (global.enterCourt == 2) {
 					global.enterCourt++
-					
+				} else if (global.enterCourt == 3) {
+					global.enterCourt++
 					if (!global.hasAllEvidence) {
 						//Didn't collect evidence - Bad ending!
 						create_textbox("Final Overview")
