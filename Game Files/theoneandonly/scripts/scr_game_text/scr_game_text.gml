@@ -56,7 +56,7 @@ switch(_text_id) {
 		break;
 		
 	case "Cop":
-		scr_text("P: We found the body inside. You can go investigate it now.")
+		scr_text("P: We found the body inside. You can go investigate it now. Be careful.")
 		oPoliceman.coversation_end = true
 		break;
 		
@@ -87,24 +87,24 @@ switch(_text_id) {
 
 
 	case "Window":
-		scr_text("D: Nice view of the city")
+		scr_text("D: Nice view of the city.")
 		scr_text("D: Was it always open?")
 		break;
 		
 	case "Window - Fingerprint":
 		scr_text("*Pulls out Fingerprint kit*")
-		scr_text("D: There are fingerprints from someone else than the victim")
+		scr_text("D: There are fingerprints from someone else than the victim.")
 		scr_text("D: The killer must have escaped through here!")
 		break;
 		
 	case "PictureFrame":
-		scr_text("D: This must be the deceased")
+		scr_text("D: This must be the deceased.")
 		break;
 		
 	case "PictureFrame - Fingerprint":
 		scr_text("*Pulls out Fingerprint kit*")
-		scr_text("D: It appears that someone besides the owner took a look at this picture")
-		scr_text("D: The killer seems to like to get to know the target, even after the murder")
+		scr_text("D: It appears that someone besides the owner took a look at this picture.")
+		scr_text("D: The killer seems to like to get to know the target, even after the murder.")
 		break;
 		
 	case "Body":
@@ -167,7 +167,8 @@ switch(_text_id) {
 		scr_text("P: What!? That can't be true! He would never do that!")
 		scr_text("L: Sir, we understand that this might come as a shock, but we are just relaying the news.")
 		scr_text("L: Also, the odds are stacked quite against him, so likely unless some new evidence comes out, the verdict is heavily leaning towards him being sentenced guilty.")
-		scr_text("L: The trial is going to be happening in a few days. So if you wish to see it, you can come.")
+		scr_text("L: The trial is going to be happening now. So if you wish to see it, you can come.")
+		scr_text("L: Don't panic, Jones. If you have the evidence there's high possibility of you saving him. Unless you want to speak directly to who's behind all of it... The choice is yours.")
 		scr_text("P: I... I understand. Thank you for telling me this.")
 		scr_text("*Ends call*")
 		break;
@@ -188,7 +189,7 @@ switch(_text_id) {
 
 	case "Enter Court - With Evidence":
 		scr_text("Judge: We have all gathered here to judge the fate of Steve Stevenson for his crimes.")
-			scr_option("Give the evidence, try to prove your brother's innocence!", "Court - Proof")
+			scr_option("Try to prove your brother's innocence!", "Court - Proof")
 			scr_option("Go try to catch the killer before it's too late!" , "Court - Catch")
 		break;
 		
@@ -211,10 +212,12 @@ switch(_text_id) {
 		
 	
 	case "Killer gets away":
-		scr_text("The following text is temporary and subject to be changed. Any names and or likeness to real characters are pure coincidence and works of fiction.")
-		scr_text("You're too late Batman!")
-		scr_text("You'll never catch me alive!")
-		scr_text("MWAHAHAHAHAHA!!!")
+		scr_text("*Killer got away, you're too late...*")
+		scr_text("And with that a life is saved of a close one, redeemed through hard effort. But what is one life to the truth?")
+		scr_text("Often we make choices not knowing where it leads, for we always have to give up some things for others. Though one life was saved, the true killer never ended up being caught.")
+		scr_text("Left to his own devices, he continues his streak of murders leading to many ruined lives.")
+		scr_text("So now you might ask yourself… Was the price worth it?")
+		scr_text("Well, that is up to you to decide and thank you for playing The Ripple.")
 		break;
 		
 	case "Catch killer":
