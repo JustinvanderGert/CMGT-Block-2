@@ -180,6 +180,7 @@ switch(_text_id) {
 		scr_text("J: Mr Steve has been found GUILTY, accountable for multiple first-degree murders, and has been sentenced to death row.")
 		scr_text("J: That is the final decision of the court and the sentence shall be carried out tomorrow. With that, this court session is over.")
 			scr_option("I could have fixed this!", "Court - Slams hammer")
+		global.enterCourt++
 		break;
 		
 	case "Court - Slams hammer":
