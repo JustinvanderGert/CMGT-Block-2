@@ -10,10 +10,18 @@ switch(_text_id) {
 		scr_text("*Licks your hand*")
 		oDoggy.coversation_end = true
 		break;
-	
+		
+	case "Intro":
+		scr_text("Dective: Strange places life leads you. Just another job like any before, but this time it leads me somewhere I didn’t think I would come so soon.")
+		scr_text("D: I wonder how he is doing? After the previous court case, he managed to finally settle down and go clean from what I’ve heard.")
+		scr_text("D: I hope he is well…")
+		scr_text("D: But now that's not what's most important right now, personal matters are for later, now is the time to find whoever is committing these heinous acts, before they hurt anyone else…")
+		scr_text("[ Focus on your investigation. You can’t relive moments in real life, can you? ]")
+		break;
+		
 	case "P-chief - Start":
 		scr_text("Phone: R-RING RING!")
-		scr_text("Detective: Hello, this is detective Jones. What do you need?")
+		scr_text("D: Hello, this is detective Jones. What do you need?")
 		scr_text("Police chief: Hey there, I am the police chief from the Nistrad county. " +
 		"I heard that you are for hire and are quite skilled in your field from hearing about your previous work.")
 		scr_text("P: We are currently shorthanded here, so we could use some help with a murder case that we have been having trouble with for a while. " +

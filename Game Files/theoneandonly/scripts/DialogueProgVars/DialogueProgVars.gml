@@ -2,6 +2,10 @@
 function DialogueProgVars() {
 	StopAllSound()
 	global.choices = [];
+	
+	//Intro
+	global.Intro = 0;
+	global.LeaveIntro = 0;
 
 	//Office
 	global.firstCall = 0;
