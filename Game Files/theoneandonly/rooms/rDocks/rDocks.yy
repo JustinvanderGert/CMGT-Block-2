@@ -48,6 +48,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oKiller","path":"objects/oKiller/oKiller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":185.0,"y":43.0,"resourceVersion":"1.0","name":"inst_6450068F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oRain","path":"objects/oRain/oRain.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-87.0,"y":-98.0,"resourceVersion":"1.0","name":"inst_59FDC9E9","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":96.0,"resourceVersion":"1.0","name":"inst_48137958","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tDocks","path":"tilesets/tDocks/tDocks.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":12,"TileSerialiseData":[
 201,202,203,204,205,206,192,193,194,195,196,197,201,189,189,169,205,181,202,183,
@@ -73,6 +74,7 @@
     {"name":"inst_6450068F","path":"rooms/rDocks/rDocks.yy",},
     {"name":"inst_6842C641","path":"rooms/rDocks/rDocks.yy",},
     {"name":"inst_59FDC9E9","path":"rooms/rDocks/rDocks.yy",},
+    {"name":"inst_48137958","path":"rooms/rDocks/rDocks.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,
