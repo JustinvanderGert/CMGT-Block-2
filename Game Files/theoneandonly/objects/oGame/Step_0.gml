@@ -25,6 +25,12 @@ if(room == rCity && global.enterCity == 0) {
 	global.enterCity++;
 }
 
+//When entering the Crime scene
+if(room == rCrimeScene && global.enterCrimeScene == 0) {
+	audio_play_sound(mCrimeScene, 1, true)
+	global.enterCrimeScene++
+}
+
 //When leaving the crime scene - Police chief calls
 if(room == rCitywithCourt && global.leaveCrimeScene == 0) {
 	global.hasAllEvidence = true;

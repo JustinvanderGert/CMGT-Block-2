@@ -10,6 +10,7 @@ function DialogueProgVars() {
 	global.enterCity = 0;
 	
 	//CrimeScene
+	global.enterCrimeScene = 0
 	global.foundBody = 0;
 	global.leaveCrimeScene = 0
 	
