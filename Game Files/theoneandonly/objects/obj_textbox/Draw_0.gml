@@ -181,10 +181,14 @@ draw_sprite_ext(txtb_spr, txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, 
 //---options---
 if draw_char == text_length[page] && page == page_number -1
 	{
-	
+	oldOption_pos = option_pos;
 	//option selection
 	option_pos += global.menuKeyDown - global.menuKeyUp //keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 	option_pos = clamp(option_pos, 0, option_number-1);
+	
+	if (oldOption_pos != option_pos) {
+		audio_play_sound(Choices, 2, false)
+	}
 
 	//draw the options
 	var _op_space = 15;
