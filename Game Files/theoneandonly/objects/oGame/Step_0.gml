@@ -78,6 +78,7 @@ if(room == rDocks && global.enterDocks == 0) {
 	if (global.saveBrother) {
 		create_textbox("Killer gets away")
 		oKiller.visible = false
+		oBoat.visible = true
 	} else {
 		create_textbox("Catch killer")
 	}
