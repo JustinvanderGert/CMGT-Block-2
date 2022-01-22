@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Managers",
-    "path": "folders/Objects/Managers.yy",
+    "name": "Menu",
+    "path": "folders/Objects/Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "oTransition",
