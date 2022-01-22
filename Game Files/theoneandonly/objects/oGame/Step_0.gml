@@ -20,6 +20,7 @@ if(room == rOffice && global.firstCall == 0) {
 
 //When loading City the first time - Brother calls
 if(room == rCity && global.enterCity == 0) {
+	audio_play_sound(mCity, 1, true)
 	create_textbox("Enter City");
 	global.enterCity++;
 }

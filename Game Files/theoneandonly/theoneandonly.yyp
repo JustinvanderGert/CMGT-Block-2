@@ -73,6 +73,7 @@
     {"id":{"name":"oCrowdWoman","path":"objects/oCrowdWoman/oCrowdWoman.yy",},"order":1,},
     {"id":{"name":"sWitnessHeadshake","path":"sprites/sWitnessHeadshake/sWitnessHeadshake.yy",},"order":8,},
     {"id":{"name":"sLights","path":"sprites/sLights/sLights.yy",},"order":6,},
+    {"id":{"name":"mCrimeScene","path":"sounds/mCrimeScene/mCrimeScene.yy",},"order":2,},
     {"id":{"name":"sJudge","path":"sprites/sJudge/sJudge.yy",},"order":3,},
     {"id":{"name":"ResetGlobalVars","path":"scripts/ResetGlobalVars/ResetGlobalVars.yy",},"order":11,},
     {"id":{"name":"oLightfromLamp2","path":"objects/oLightfromLamp2/oLightfromLamp2.yy",},"order":5,},
@@ -95,6 +96,7 @@
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":1,},
     {"id":{"name":"sPhone","path":"sprites/sPhone/sPhone.yy",},"order":7,},
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},"order":0,},
+    {"id":{"name":"mCity","path":"sounds/mCity/mCity.yy",},"order":1,},
     {"id":{"name":"sInteract","path":"sprites/sInteract/sInteract.yy",},"order":6,},
     {"id":{"name":"oCrowdMan","path":"objects/oCrowdMan/oCrowdMan.yy",},"order":0,},
     {"id":{"name":"InteractionHandler","path":"scripts/InteractionHandler/InteractionHandler.yy",},"order":4,},
@@ -162,6 +164,7 @@
     {"folderPath":"folders/Sprites/Docks.yy","order":11,"resourceVersion":"1.0","name":"Docks","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/BG.yy","order":12,"resourceVersion":"1.0","name":"BG","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Menu.yy","order":27,"resourceVersion":"1.0","name":"Menu","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sounds/Themes.yy","order":0,"resourceVersion":"1.0","name":"Themes","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
