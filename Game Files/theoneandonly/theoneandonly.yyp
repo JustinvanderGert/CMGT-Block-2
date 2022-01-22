@@ -38,6 +38,7 @@
     {"id":{"name":"oPictureFrame","path":"objects/oPictureFrame/oPictureFrame.yy",},"order":3,},
     {"id":{"name":"ShowControls","path":"scripts/ShowControls/ShowControls.yy",},"order":10,},
     {"id":{"name":"sUmbrellastand","path":"sprites/sUmbrellastand/sUmbrellastand.yy",},"order":3,},
+    {"id":{"name":"mOffice","path":"sounds/mOffice/mOffice.yy",},"order":5,},
     {"id":{"name":"rCourt","path":"rooms/rCourt/rCourt.yy",},"order":6,},
     {"id":{"name":"oFingerprintkit","path":"objects/oFingerprintkit/oFingerprintkit.yy",},"order":0,},
     {"id":{"name":"sBoatleaving","path":"sprites/sBoatleaving/sBoatleaving.yy",},"order":2,},

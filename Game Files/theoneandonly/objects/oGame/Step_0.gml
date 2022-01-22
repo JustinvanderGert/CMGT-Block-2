@@ -15,12 +15,14 @@ global.menuKeyDown = keyboard_check_pressed(vk_down) or keyboard_check_pressed(o
 if(room == rOffice && global.firstCall == 0) {
 	//show_debug_message("Start call")
 	StopAllSound()
+	audio_play_sound(mOffice, 1, true)
 	create_textbox("P-chief - Start");
 	global.firstCall++;
 }
 
 //When loading City the first time - Brother calls
 if(room == rCity && global.enterCity == 0) {
+	StopSound(mOffice)
 	audio_play_sound(mCity, 1, true)
 	
 	create_textbox("Enter City");
