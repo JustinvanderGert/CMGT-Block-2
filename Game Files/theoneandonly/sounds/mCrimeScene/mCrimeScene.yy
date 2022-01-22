@@ -12,10 +12,10 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mCrimeScene.mp3",
-  "duration": 37.12,
+  "duration": 24.0587769,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Themes",
+    "path": "folders/Sounds/Themes.yy",
   },
   "resourceVersion": "1.0",
   "name": "mCrimeScene",

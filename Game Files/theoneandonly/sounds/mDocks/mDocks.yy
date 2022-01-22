@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mCity.mp3",
-  "duration": 22.2040825,
+  "soundFile": "mDocks.mp3",
+  "duration": 17.554285,
   "parent": {
     "name": "Themes",
     "path": "folders/Sounds/Themes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mCity",
+  "name": "mDocks",
   "tags": [],
   "resourceType": "GMSound",
 }

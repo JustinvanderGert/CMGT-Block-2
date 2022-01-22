@@ -3,3 +3,7 @@
 function StopSound(index){
 	audio_stop_sound(index)
 }
+
+function StopAllSound() {
+	audio_stop_all()
+}

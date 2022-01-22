@@ -1,5 +1,6 @@
 //variables keeping track of progression through game dialogue.
 function DialogueProgVars() {
+	StopAllSound()
 	global.choices = [];
 
 	//Office
