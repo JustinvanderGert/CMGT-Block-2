@@ -218,6 +218,7 @@ switch(_text_id) {
 		scr_text("Left to his own devices, he continues his streak of murders leading to many ruined lives.")
 		scr_text("So now you might ask yourself… Was the price worth it?")
 		scr_text("Well, that is up to you to decide and thank you for playing The Ripple.")
+		global.enterDocks += 2
 		break;
 		
 	case "Catch killer":
@@ -240,7 +241,7 @@ switch(_text_id) {
 		
 	case "Catch killer - Shrug 2":
 		scr_text("K: So now, this has gotten boring so take me away. I just hope you can live with yourself.")
-			scr_text("D:...")
+		scr_text("D:...")
 		global.enterDocks++
 		oKiller.coversation_end = true
 		break;
