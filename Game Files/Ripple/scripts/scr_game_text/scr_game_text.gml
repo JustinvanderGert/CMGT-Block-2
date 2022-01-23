@@ -304,7 +304,7 @@ switch(_text_id) {
 		break;
 	
 	case "Menu":
-		room_goto(rMenu)
+		game_restart()
 		break;
 	
 
