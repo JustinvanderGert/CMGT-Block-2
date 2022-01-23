@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.01,
+  "volume": 0.3,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Choices.mp3",
-  "duration": 0.264,
+  "soundFile": "Choices.wav",
+  "duration": 0.683333,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

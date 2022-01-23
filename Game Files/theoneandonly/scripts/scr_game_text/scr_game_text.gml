@@ -22,6 +22,7 @@ switch(_text_id) {
 		
 	case "P-chief - Start":
 		scr_text("Phone: R-RING RING!")
+			oPlayer.Calling = true
 		scr_text("D: Hello, this is detective Jones. What do you need?")
 		scr_text("Police chief: Hey there, I am the police chief from the Nistrad county. " +
 		"I heard that you are for hire and are quite skilled in your field.")
@@ -55,6 +56,7 @@ switch(_text_id) {
 	case "Enter City":
 		scr_text("D: The crime scene should be south from here.")
 		scr_text("Phone: R-RING RING!")
+		oPlayer.Calling = true
 		scr_text("Brother: H-hey, how are you doing? I heard you’re in Nistrad and we haven’t met in a long time. S-so, how about we meet up someday?")
 		scr_text("D: Hey Steve. Haven’t talked to you in a while, but unfortunately, I can’t. Recently I was busy with a case. Maybe some other time…")
 		scr_text("B: Ah... Y- Yep, that's alright… I understand you’re very busy, so I can’t blame you… B-but it just feels like we just no longer talk. So I just wanted to meet up, like you know, in the old days!")
@@ -146,6 +148,7 @@ switch(_text_id) {
 		
 	case "After body":
 		scr_text("Phone: R-RING RING")
+		oPlayer.Calling = true
 		scr_text("B: H-hey. So Uhmm... I Hope I am not interrupting anything but I- I mean... I don’t know what's going on.")
 		scr_text("B: But I noticed a few strange things happening around-")
 		scr_text("D: I am busy, I will call you later.")
@@ -157,6 +160,7 @@ switch(_text_id) {
 	case "Leave CrimeScene - No Evidence":
 		global.choices[2] = 0
 		scr_text("Phone: R-RING RING!")
+		oPlayer.Calling = true
 		scr_text("Lawyer: Hello sir. This is your brother's lawyer and I have called to inform you of recent events that have occurred.")
 		scr_text("P: What is it?")
 		scr_text("L: Your brother has been put on trial for charges of multiple murders.")
@@ -172,6 +176,7 @@ switch(_text_id) {
 	case "Leave CrimeScene - With Evidence":
 		global.choices[2] = 1
 		scr_text("Phone: R-RING RING!")
+		oPlayer.Calling = true
 		scr_text("L: Hello sir. This is your brother's lawyer and I have called to inform you of recent events that have occurred.")
 		scr_text("P: What is it?")
 		scr_text("L: Your brother has been put on trial for charges of multiple murders.")

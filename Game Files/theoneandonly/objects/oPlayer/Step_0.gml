@@ -13,6 +13,20 @@ if (!global.textDisplayed && !global.gamePaused) {
 	inputDirection = point_direction(0,0,keyRight-keyLeft,keyDown-keyUp);
 	inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 	
+	
+	//phone call animation
+	if Calling = true {
+	sprite_index = sPlayerCall
+	image_index = 0 
+	Calling = false
+	}
+	
+if sprite_index == sPlayerCall && image_index >= 14 {
+	sprite_index = sPlayer
+	}
+	
+	
+	
 	//When interacting start the handler functions
 	if(keyActivate){
 		//Office is the only room with items to pick up
