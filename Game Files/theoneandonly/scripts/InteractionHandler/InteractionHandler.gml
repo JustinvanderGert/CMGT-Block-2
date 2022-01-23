@@ -9,6 +9,7 @@ function PickupHandler(obj){
 	}
 	show_debug_message("Pickup: " + string(obj));
 	if (obj.type == "Item") {
+		audio_play_sound(mPick_up, 2, false)
 		obj.x = 10 + 20 * pickedUpAmount;
 		obj.y = 10;
 	

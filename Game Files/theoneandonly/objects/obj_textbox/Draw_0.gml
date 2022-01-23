@@ -191,7 +191,8 @@ if draw_char == text_length[page] && page == page_number -1
 	option_pos += global.menuKeyDown - global.menuKeyUp //keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 	option_pos = clamp(option_pos, 0, option_number-1);
 	
-	if (oldOption_pos != option_pos) {
+	if (oldOption_pos != option_pos && option_pos != -1) {
+		show_debug_message("oldOption: " + string(oldOption_pos) + " Option: " + string(option_pos))
 		audio_play_sound(Choices, 2, false)
 	}
 

@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Pick_up.mp3",
-  "duration": 0.432,
+  "soundFile": "mWind.mp3",
+  "duration": 6.24,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Pick_up",
+  "name": "mWind",
   "tags": [],
   "resourceType": "GMSound",
 }

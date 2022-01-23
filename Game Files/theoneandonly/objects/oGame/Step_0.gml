@@ -32,8 +32,10 @@ if(room == rOffice && global.firstCall == 0) {
 
 //When loading City the first time - Brother calls
 if(room == rCity && global.enterCity == 0) {
-	StopSound(mOffice)
+	StopSound([mOffice])
 	audio_play_sound(mCity, 1, true)
+	audio_play_sound(mRain, 3, true)
+	audio_play_sound(mWind, 3, true)
 	
 	create_textbox("Enter City");
 	global.enterCity++;
@@ -41,7 +43,7 @@ if(room == rCity && global.enterCity == 0) {
 
 //When entering the Crime scene
 if(room == rCrimeScene && global.enterCrimeScene == 0) {
-	StopSound(mCity)
+	StopSound([mCity, mRain, mWind])
 	audio_play_sound(mCrimeScene, 1, true)
 	
 	global.enterCrimeScene++
@@ -49,8 +51,10 @@ if(room == rCrimeScene && global.enterCrimeScene == 0) {
 
 //When leaving the crime scene - Police chief calls
 if(room == rCitywithCourt && global.leaveCrimeScene == 0) {
-	StopSound(mCrimeScene)
+	StopSound([mCrimeScene])
 	audio_play_sound(mCity, 1, true)
+	audio_play_sound(mRain, 3, true)
+	audio_play_sound(mWind, 3, true)
 	
 	global.hasAllEvidence = true;
 	for(i = 0; i < array_length(global.evidence); i++) {
@@ -70,7 +74,7 @@ if(room == rCitywithCourt && global.leaveCrimeScene == 0) {
 
 //When entering the court room
 if(room == rCourt && global.enterCourt == 0) {
-	StopSound(mCity)
+	StopSound([mCity, mRain, mWind])
 	audio_play_sound(mCourt, 1, true)
 
 	global.enterCourt++
@@ -82,8 +86,14 @@ if(room == rCourt && global.enterCourt == 0) {
 	}
 }
 
+if(room == rCityDocks && global.leaveCourt == 0) {
+	audio_play_sound(mRain, 3, true)
+	audio_play_sound(mWind, 3, true)
+	global.leaveCourt++
+}
+
 if(room == rDocks && global.enterDocks == 0) {
-	StopSound(mCourt)
+	StopSound([mCourt])
 	audio_play_sound(mDocks, 1, true)
 	global.enterDocks++
 	
